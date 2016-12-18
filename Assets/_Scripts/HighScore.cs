@@ -19,7 +19,7 @@ public class HighScore : MonoBehaviour
 
     void Update()
     {
-        Text gt = this.GetComponent<Text>();
+        GUIText gt = this.GetComponent<GUIText>();
         gt.text = "High Score: " + score;
         //Update ApplePickerHighScore in PlayerPrefs if necessary
         if(score > PlayerPrefs.GetInt("ApplePickerHighScore"))  //4

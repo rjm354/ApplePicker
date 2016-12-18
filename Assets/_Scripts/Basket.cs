@@ -4,7 +4,7 @@ using System.Collections;
 
 public class Basket : MonoBehaviour
 {
-    public Text scoreGT; //1
+    public GUIText scoreGT; //1
 
     void Update()
     {
@@ -28,7 +28,7 @@ public class Basket : MonoBehaviour
         //Find a reference to the ScoreCounter GameObject
         GameObject scoreGO = GameObject.Find("ScoreCounter");   //2
         //Get the GUIText Component of that GameObject
-        scoreGT = scoreGO.GetComponent<Text>();  //3
+        scoreGT = scoreGO.GetComponent<GUIText>();  //3
         //Set the starting number of points to 0
         scoreGT.text = "0";
     }
